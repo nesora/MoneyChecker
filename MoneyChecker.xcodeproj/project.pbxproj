@@ -19,6 +19,9 @@
 		840C9CE91FA0E0EE00BFC6E1 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C9CE81FA0E0EE00BFC6E1 /* TransactionsViewController.swift */; };
 		8424C3861FA0EC2300337916 /* EditAddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424C3851FA0EC2300337916 /* EditAddCategoryViewController.swift */; };
 		8424C3881FA0EC3800337916 /* EditAddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424C3871FA0EC3800337916 /* EditAddTransactionViewController.swift */; };
+		8424C38C1FA0F5DB00337916 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424C38B1FA0F5DB00337916 /* CategoryCollectionViewCell.swift */; };
+		847D9D221FA3692300EAEF1F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D9D211FA3692300EAEF1F /* CoreDataStack.swift */; };
+		848DFB801FA37B6E00DB9B31 /* TransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DFB7F1FA37B6E00DB9B31 /* TransactionsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		840C9CE81FA0E0EE00BFC6E1 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		8424C3851FA0EC2300337916 /* EditAddCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddCategoryViewController.swift; sourceTree = "<group>"; };
 		8424C3871FA0EC3800337916 /* EditAddTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAddTransactionViewController.swift; sourceTree = "<group>"; };
+		8424C38B1FA0F5DB00337916 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		847D9D211FA3692300EAEF1F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		848DFB7F1FA37B6E00DB9B31 /* TransactionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +113,13 @@
 		840C9CB31FA0DD8B00BFC6E1 /* MoneyChecker */ = {
 			isa = PBXGroup;
 			children = (
-				840C9CE51FA0E09600BFC6E1 /* ViewControllers */,
 				840C9CB41FA0DD8B00BFC6E1 /* AppDelegate.swift */,
+				847D9D201FA368D100EAEF1F /* CoreData */,
+				840C9CE51FA0E09600BFC6E1 /* ViewControllers */,
 				840C9CB81FA0DD8B00BFC6E1 /* Main.storyboard */,
 				840C9CBE1FA0DD8B00BFC6E1 /* Assets.xcassets */,
 				840C9CC01FA0DD8B00BFC6E1 /* LaunchScreen.storyboard */,
 				840C9CC31FA0DD8B00BFC6E1 /* Info.plist */,
-				840C9CBB1FA0DD8B00BFC6E1 /* MoneyChecker.xcdatamodeld */,
 			);
 			path = MoneyChecker;
 			sourceTree = "<group>";
@@ -151,6 +157,7 @@
 			children = (
 				840C9CE61FA0E0DF00BFC6E1 /* CategoriesViewController.swift */,
 				8424C3851FA0EC2300337916 /* EditAddCategoryViewController.swift */,
+				8424C38B1FA0F5DB00337916 /* CategoryCollectionViewCell.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -160,8 +167,18 @@
 			children = (
 				840C9CE81FA0E0EE00BFC6E1 /* TransactionsViewController.swift */,
 				8424C3871FA0EC3800337916 /* EditAddTransactionViewController.swift */,
+				848DFB7F1FA37B6E00DB9B31 /* TransactionsTableViewCell.swift */,
 			);
 			path = Transaction;
+			sourceTree = "<group>";
+		};
+		847D9D201FA368D100EAEF1F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				840C9CBB1FA0DD8B00BFC6E1 /* MoneyChecker.xcdatamodeld */,
+				847D9D211FA3692300EAEF1F /* CoreDataStack.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,11 +317,14 @@
 			files = (
 				8424C3861FA0EC2300337916 /* EditAddCategoryViewController.swift in Sources */,
 				840C9CB71FA0DD8B00BFC6E1 /* DashboardViewController.swift in Sources */,
+				848DFB801FA37B6E00DB9B31 /* TransactionsTableViewCell.swift in Sources */,
 				840C9CB51FA0DD8B00BFC6E1 /* AppDelegate.swift in Sources */,
+				847D9D221FA3692300EAEF1F /* CoreDataStack.swift in Sources */,
 				8424C3881FA0EC3800337916 /* EditAddTransactionViewController.swift in Sources */,
 				840C9CE71FA0E0DF00BFC6E1 /* CategoriesViewController.swift in Sources */,
 				840C9CBD1FA0DD8B00BFC6E1 /* MoneyChecker.xcdatamodeld in Sources */,
 				840C9CE91FA0E0EE00BFC6E1 /* TransactionsViewController.swift in Sources */,
+				8424C38C1FA0F5DB00337916 /* CategoryCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
